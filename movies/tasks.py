@@ -3,7 +3,6 @@ from django.core.mail import mail_admins
 from movies import omdb_integration
 
 
-
 @shared_task
 def search_and_save(search):
     return omdb_integration.search_and_save(search)
